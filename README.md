@@ -1,6 +1,6 @@
 # RJM SvelteKit Template
 
-This is my personal SvelteKit Git Repo template.
+This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL V2.0
 
 ## Features
 - Prisma configured for a PostgreSQL database w/ a sample model
