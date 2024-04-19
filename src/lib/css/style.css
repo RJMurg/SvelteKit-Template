@@ -13,6 +13,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow-y: visible;
+
+	font-family: 'IBM Plex Sans', sans-serif;
+	text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -26,4 +29,54 @@ body {
 		width: clamp(200px, 100%, 650px);
 		padding: 1rem;
 	}
+}
+
+.title {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 800;
+}
+
+.subtitle {
+	font-family: 'IBM Plex Mono', monospace;
+	font-style: italic;
+}
+
+.xlarge {
+	font-size: 5rem;
+}
+
+.large {
+	font-size: 3rem;
+}
+
+.medium {
+	font-size: 2rem;
+}
+
+.small {
+	font-size: 0.75rem;
+}
+
+.xsmall {
+	font-size: 0.5rem;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 800;
 }
