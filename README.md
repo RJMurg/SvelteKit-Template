@@ -8,6 +8,7 @@ This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL 
 - A simple CSS style
 - Carbon Design System
 - Functional containerisation system
+- Barebones Lucia authentication system for GitHub OAuth
 
 ## Setup:
 
