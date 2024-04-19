@@ -14,4 +14,3 @@
 		{data.hello}
 	</h1>
 </div>
-	
