@@ -80,3 +80,9 @@ body {
 .bold {
 	font-weight: 800;
 }
+
+.horizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

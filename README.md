@@ -35,7 +35,10 @@ npm install
 npx prisma migrate dev
 ```
 
-5. Run the development server
+5. Get your GitHub Keys for OAuth
+   See instructions [here](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app).
+
+6. Run the development server
 
 ```bash
 npm run dev

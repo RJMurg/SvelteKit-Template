@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import { enhance } from '$app/forms';
 	import 'carbon-components-svelte/css/all.css';
 
 	export let data: PageData;
@@ -10,8 +11,19 @@
 </svelte:head>
 
 <div>
+	<div class="horizontal">
+		<a href="/login">Login!</a>
+		<form method="POST" action="?/logout" use:enhance>
+			<button>Sign out</button>
+		</form>
+	</div>
+
+	<hr />
+
 	<h1>
 		Data from serverside component: {data.hello}
+		<br />
+		{data.username}
 	</h1>
 
 	<hr />
