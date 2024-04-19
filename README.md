@@ -5,6 +5,7 @@ This is my personal SvelteKit Git Repo template.
 ## Features
 - Prisma configured for a PostgreSQL database w/ a sample model
 - A simple CSS style
+- Carbon Design System
 - Functional containerisation system
 
 ## Setup:
@@ -32,3 +33,5 @@ npx prisma migrate dev
 ```bash
 npm run dev
 ```
+
+You are now ready to develop!

@@ -11,7 +11,7 @@
 
 <div>
 	<h1 class="title">
-		{hello}
+		{data.hello}
 	</h1>
 </div>
 	
