@@ -12,7 +12,7 @@ This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/RJMurg/sveltekit-template
+git clone https://github.com/RJMurg/SvelteKit-Template.git
 ```
 
 2. Install the dependencies
