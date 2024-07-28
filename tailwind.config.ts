@@ -1,20 +1,22 @@
 import type { Config } from 'tailwindcss';
-const legsKit = require('@rjmurg/legskit/tailwind');
 
 export default {
-	presets: [
-		require('@rjmurg/legskit/tailwind'),
-	],
+	presets: [require('@rjmurg/legskit/tailwind')],
 
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
-	plugins: [
-		require('@tailwindcss/typography'),
-		require('daisyui')
-	],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+	theme: {
+		fontFamily: {
+			'sans': ['Montserrat', 'Roboto', 'sans-serif'],
+			'mono': ['IBM Plex Mono', 'monospace'],
+			'philosopher': ['Philosopher', 'sans-serif'],
+		},
+	},
 
 	daisyui: {
-		themes: ["light", "dark", legsKit],
-		darkTheme: "dark",
-	  },
+		themes: ['dark'],
+		darkTheme: 'dark'
+	}
 } as Config;

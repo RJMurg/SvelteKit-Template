@@ -2,3 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/tailwind.css';
+@import url("https://raw.githubusercontent.com/RJMurg/legsKit/main/assets/fonts/montserrat/loader.css");
+@import url("https://raw.githubusercontent.com/RJMurg/legsKit/main/assets/fonts/philosopher/loader.css");
+@import url("https://raw.githubusercontent.com/RJMurg/legsKit/main/assets/fonts/ibm-plex-mono/loader.css");
