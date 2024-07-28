@@ -1,23 +1,20 @@
 import type { Config } from 'tailwindcss';
+const legsKit = require('@rjmurg/legskit/tailwind');
 
 export default {
 	presets: [
 		require('@rjmurg/legskit/tailwind'),
 	],
+
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-	theme: {
-	 extend: {}
-	},
-	plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('daisyui')
+	],
+
 	daisyui: {
-	 themes: [
-	  'light',
-	  'dark',
-	  'bumblebee',
-	  'emerald',
-	  'corporate',
-	  'retro',
-	  'cyberpunk',
-	 ]
-	}
+		themes: ["light", "dark", legsKit],
+		darkTheme: "dark",
+	  },
 } as Config;

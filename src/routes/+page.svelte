@@ -1,8 +1,5 @@
-<script lang="ts">
-    import ThemeSwitcher from "$lib/components/ThemeSwitcher.svelte"
-</script>
-
-<ThemeSwitcher/>
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 <button class="btn btn-primary">Hello daisyUI</button>
+
+<div class="logo">dib</div>

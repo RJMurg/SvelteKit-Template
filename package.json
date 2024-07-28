@@ -42,6 +42,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@rjmurg/legskit": "github:RJMurg/legsKit"
+		"@rjmurg/legskit": "github:rjmurg/legsKit"
 	}
 }
