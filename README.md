@@ -1,7 +1,9 @@
 # RJM SvelteKit Template - Base
 
 This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL V3.0
-Unlike the other templates I use, this does not contain additional packages
+Unlike the other templates I use, this does not contain additional packages.
+
+For docs on using this template, go [here](./docs)
 
 ## Project Features
 
@@ -18,6 +20,8 @@ Unlike the other templates I use, this does not contain additional packages
 - Container build on push to master / main
 
 ## Setup:
+Prerequisites:
+- Node.JS
 
 1. Clone the repository
 
