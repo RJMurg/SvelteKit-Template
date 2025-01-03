@@ -6,8 +6,9 @@ docker-compose.yaml
 README.md
 .env.example
 .eslintignore
-.eslintrc.cjs
+eslint.config.js
 .npmrc
 .prettierignore
 .prettierrc
 .github
+bun.lockb
