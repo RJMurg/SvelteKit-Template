@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  check-vitest:
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,10 +22,10 @@ jobs:
       - name: 'Install Deps'
         run: npm install
       - name: 'Test'
-      # I have to do this double `--` because the first one is for the `run` command
-        run: npm run test -- -- --coverage.enabled true
+        # I have to do this double `--` because the first one is for the `run` command
+        run: 'npm run test:coverage'
       - name: 'Report Coverage'
         # Set if: always() to also generate the report if tests are failing
         # Only works if you set `reportOnFailure: true` in your vite config as specified above
         if: always()
-        uses: davelosert/vitest-coverage-report-action@v2
+        uses: davelosert/vitest-coverage-report-action@v2.8.0

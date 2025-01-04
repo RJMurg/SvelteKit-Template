@@ -13,6 +13,7 @@ For docs on using this template, go [here](./docs)
 - Built in Containerisation (With Container Health Check)
 
 ## Dev Features
+
 - Vitest
 - ESLint
 - Prettier
@@ -20,7 +21,9 @@ For docs on using this template, go [here](./docs)
 - Container build on push to master / main
 
 ## Setup:
+
 Prerequisites:
+
 - Node.JS
 
 1. Clone the repository
