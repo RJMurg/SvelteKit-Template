@@ -3,6 +3,7 @@
 This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL V3.0
 Unlike the other templates I use, this does not contain additional packages.
 
+For a template with the Prisma ORM configured, look [here](https://github.com/RJMurg/SvelteKit-Prisma-Template).
 For docs on using this template, go [here](./docs)
 
 ## Project Features
