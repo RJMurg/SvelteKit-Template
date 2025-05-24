@@ -8,8 +8,8 @@ For docs on using this template, go [here](./docs)
 
 ## Project Features
 
-- ShadCN Svelte
-- TailwindCSS
+- ShadCN Svelte (Next edition)
+- TailwindCSS v4
 - Node Adapter
 - Built in Containerisation (With Container Health Check)
 
