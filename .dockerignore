@@ -3,6 +3,7 @@
 .github
 .idea
 .svelte-kit
+coverage
 docs
 node_modules
 tests
