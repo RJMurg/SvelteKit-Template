@@ -7,34 +7,30 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 export default defineConfig({
 	plugins: [enhancedImages(), tailwindcss(), sveltekit()],
 	test: {
+		coverage: {
+			reporter: ['json-summary'],
+			reportOnFailure: true
+		},
 		workspace: [
 			{
 				extends: './vite.config.ts',
 				plugins: [svelteTesting()],
 				test: {
-					coverage: {
-						reporter: ['json-summary'],
-						reportOnFailure: true
-					},
 					name: 'client',
 					environment: 'jsdom',
 					clearMocks: true,
 					include: ['tests/unit/**/*.svelte.{test,spec}.{js,ts}'],
-					exclude: ['src/lib/server/**'],
+					exclude: ['src/lib/server/**', '.svelte-kit/**', 'build/**', 'node_modules/**'],
 					setupFiles: ['./vitest-setup-client.ts']
 				}
 			},
 			{
 				extends: './vite.config.ts',
 				test: {
-					coverage: {
-						reporter: ['json-summary'],
-						reportOnFailure: true
-					},
 					name: 'server',
 					environment: 'node',
 					include: ['tests/unit/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
+					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}', '.svelte-kit/**', 'build/**', 'node_modules/**'],
 				}
 			}
 		]
