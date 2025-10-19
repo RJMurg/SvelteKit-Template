@@ -1,11 +1,11 @@
 # Step 1: Build stage
-FROM node:18-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /app
 COPY . .
 RUN npm ci && npm run build
 
 # Step 2: Production stage
-FROM node:18-alpine
+FROM node:24-alpine
 WORKDIR /app
 COPY --from=build /app/static ./static
 COPY --from=build /app/package*.json ./
