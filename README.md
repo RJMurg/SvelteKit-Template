@@ -1,48 +1,38 @@
-# RJM SvelteKit Template - Base
+# sv
 
-This is my personal SvelteKit Git Repo template. It is licensed under GNU's GPL V3.0
-Unlike the other templates I use, this does not contain additional packages.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-For a template with the Prisma ORM configured, look [here](https://github.com/RJMurg/SvelteKit-Prisma-Template).
-For docs on using this template, go [here](./docs)
+## Creating a project
 
-## Project Features
+If you're seeing this, you've probably already done this step. Congrats!
 
-- ShadCN Svelte (Next edition)
-- TailwindCSS v4
-- Node Adapter
-- Built in Containerisation (With Container Health Check)
+```sh
+# create a new project in the current directory
+npx sv create
 
-## Dev Features
-
-- Vitest
-- ESLint
-- Prettier
-- PR Checks (Vitest & Test container build)
-- Container build on push to master / main
-
-## Setup:
-
-Prerequisites:
-
-- Node.JS
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/RJMurg/SvelteKit-Template.git
+# create a new project in my-app
+npx sv create my-app
 ```
 
-2. Install the dependencies
+## Developing
 
-```bash
-npm install
-```
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-3. Run the development server
-
-```bash
+```sh
 npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-You are now ready to develop!
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
