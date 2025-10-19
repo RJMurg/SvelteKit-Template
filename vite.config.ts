@@ -11,7 +11,7 @@ export default defineConfig({
 			reporter: ['json-summary'],
 			reportOnFailure: true
 		},
-		workspace: [
+		projects: [
 			{
 				extends: './vite.config.ts',
 				plugins: [svelteTesting()],
