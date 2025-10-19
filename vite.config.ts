@@ -11,7 +11,7 @@ export default defineConfig({
 			reporter: ['json-summary'],
 			reportOnFailure: true
 		},
-		workspace: [
+		projects: [
 			{
 				extends: './vite.config.ts',
 				plugins: [svelteTesting()],
@@ -19,7 +19,7 @@ export default defineConfig({
 					name: 'client',
 					environment: 'jsdom',
 					clearMocks: true,
-					include: ['tests/unit/**/*.svelte.{test,spec}.{js,ts}'],
+					include: ['tests/unit/**/*.{test,spec}.{js,ts}'],
 					exclude: ['src/lib/server/**', '.svelte-kit/**', 'build/**', 'node_modules/**'],
 					setupFiles: ['./vitest-setup-client.ts']
 				}
